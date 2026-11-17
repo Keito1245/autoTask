@@ -36,7 +36,7 @@ def run_wuxia_daily():
             
             print("Waiting for page and potential popups to load...")
             # Give the site 5 seconds to trigger any delayed daily popups
-            page.wait_for_timeout(500000) 
+            page.wait_for_timeout(5000) 
             
             # Target the specific button text
             daily_button = page.get_by_role("button", name="Continue Reading")
